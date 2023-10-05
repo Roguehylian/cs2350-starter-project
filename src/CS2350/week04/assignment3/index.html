@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="robots" content="index,follow">
+	<meta name="description" content="a newsletter page">
+	<title>assignment3</title>
+
+	<!-- Would be used if we were linking a seperate .css file to the html file. -->
+	<!-- <link rel="stylesheet" href="style.css"> -->
+
+</head>
+<!-- Put css here -->
+<style>
+	main {
+		background-color: #7291a7
+			/* margin: 0 auto; */
+	}
+
+	* {
+		box-sizing: border-box;
+	}
+
+	body {
+		background-color: #7291a7;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 16px;
+	}
+
+	.toplist {
+
+
+		text-align: left;
+
+	}
+
+	.toplistline {
+		font-size: 1.5rem;
+		display: inline-block;
+		margin-right: 20px;
+
+	}
+
+	.toplistother {
+
+
+		text-align: left;
+
+	}
+
+	.toplistother {
+		font-size: 1.5rem;
+		color: #7291a7;
+		display: inline-block;
+		margin-right: 20px;
+
+	}
+
+	.bottom {
+		margin-top: 20px;
+		margin-bottom: 30px;
+		padding-bottom: 20px;
+
+
+	}
+
+	.bottomlist {
+		padding-top: 15px;
+
+	}
+
+	.bottomlistline {
+		text-align: center;
+		font-size: 1.5rem;
+		display: inline-block;
+
+
+
+	}
+
+
+
+	.unorderedlist {
+
+		font-size: 1.1rem;
+		display: inline-block;
+
+
+	}
+
+	.quote {
+		margin: auto;
+
+		width: 50%;
+		margin-top: 50px;
+		margin-bottom: 50px;
+		padding: 20px;
+		padding-left: 0px;
+		padding-right: 0px;
+		border-top: 1px solid #c8cbce;
+		border-bottom: 1px solid #c8cbce;
+
+	}
+
+	.qtext {
+
+		color: #7e9cb1;
+		font-size: 1.1rem;
+
+	}
+
+
+
+	.titleh {
+
+		font-size: 2rem;
+		margin-bottom: 10px;
+		margin-left: 10px;
+
+	}
+
+	.subh {
+		font-size: 1.6rem;
+		color: #7291a7;
+		margin-top: 0;
+		margin-left: 10px;
+
+
+	}
+
+
+	.subh2 {
+		font-size: 1.6rem;
+		color: #000000;
+		margin-top: 0;
+		margin-left: 10px;
+
+	}
+
+
+
+	header {
+		padding: 10px;
+		background-color: white;
+		color: black;
+		border-radius: 25px;
+	}
+
+
+	header>h1 {
+		font-family: 'Times New Roman', Times, serif;
+		font-size: 4rem;
+		font-weight: bold;
+		text-align: center;
+		border-top: 2px solid maroon;
+		padding-top: 1rem;
+		margin: 10px 0 5px 0;
+	}
+
+	header>h1>.subtitle {
+		display: block;
+		font-size: 1.5rem;
+		border-top: 1px solid maroon;
+		padding-top: 1rem;
+		margin-top: 1rem;
+	}
+
+	.toph>img {
+		width: 100%;
+	}
+
+	/* Cards */
+	.cards {
+		text-align: center;
+	}
+
+	.cards>div {
+		display: inline-block;
+		width: 30%;
+		background-color: #eee;
+		margin: 10px;
+		padding: 10px;
+		vertical-align: top;
+		height: 250px;
+	}
+
+	.cards>div>ul,
+	.cards>div>p {
+		text-align: left;
+	}
+
+	.cards>div>h1 {
+
+		background-color: white;
+		border: 1px color white;
+		width: 60px;
+		height: 60px;
+		border-radius: 30px;
+		line-height: 60px;
+		display: inline-block;
+	}
+
+	blockquote {
+		font-size: 2rem;
+		color: maroon;
+		text-align: center;
+	}
+
+	blockquote::before,
+	blockquote::after {
+		content: '"';
+		font-size: 2rem;
+		color: gray;
+
+	}
+
+	table {
+		width: 98%;
+		margin: 10px;
+		border-collapse: collapse;
+	}
+
+
+
+	table>thead {
+		border-bottom: 4px solid rgb(156, 160, 194);
+		text-align: left;
+		color: black;
+		font-size: 1.2rem;
+
+	}
+
+	thead th,
+	body td {
+		padding: 10px 0;
+	}
+
+	tbody tr {
+		border-bottom: 1px solid rgb(156, 160, 194);
+	}
+
+
+	.bottom {
+		border-radius: 250px;
+		text-align: center;
+		background-color: black;
+		color: white;
+
+
+
+	}
+
+
+	.highlighted {
+		background-color: white;
+		margin-right: 200px;
+		margin-left: 200px;
+		margin-top: 50px;
+		padding: 20px;
+		border-radius: 25px;
+		overflow: auto;
+
+
+	}
+
+	.highlighted img {
+		text-align: left;
+		max-width: 1350px;
+		max-height: 1000px;
+
+		margin: 1rem;
+	}
+
+	.des {
+		font-size: 1.1rem;
+		margin-left: 20px;
+
+
+	}
+</style>
+
+<body>
+
+
+
+
+
+	<main>
+
+
+		<header>
+
+			<div class="top">
+
+				<ul class="toplist">
+
+					<li class="toplistline"> <strong>Matthew Mendoza</strong></li>
+					<li class="toplistother">Home</li>
+					<li class="toplistother">Articles</li>
+					<li class="toplistother">Interests</li>
+
+
+
+				</ul>
+			</div>
+
+
+
+		</header>
+
+
+
+		<section class="highlighted">
+
+			<div class="quote">
+				<p class="qtext">
+					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis quae possimus voluptatum eaque
+					accusantium excepturi consequuntur provident suscipit fuga aliquid. Quia enim doloribus explicabo
+					est
+					consequuntur expedita accusantium suscipit voluptatibus. Lorem ipsum dolor sit amet. <strong>-John
+						Doe</strong></p>
+			</div>
+
+
+
+			<h1 class="titleh">Lorem ipsum dolor sit amet</h1>
+
+			<h1 class="subh"> Ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit</h1>
+
+
+			<img src="https://images.unsplash.com/photo-1592636120953-3d2b28ebfd69?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80"
+				alt="A description">
+
+
+			<p class="des">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione facere distinctio, harum deleniti
+				consequuntur sit aut quisquam, nulla, consequatur corrupti tempore beatae id dolore voluptatum fugit
+				perferendis perspiciatis. Fugit, itaque! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+				Corrupti molestias exercitationem et tenetur deleniti? Voluptatibus dolor, soluta accusamus laudantium
+				obcaecati placeat non vitae dignissimos ullam. Natus officia iste aliquid aliquam:
+
+			</p>
+
+
+
+			<ul class="unorderedlist">
+				<li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi in voluptate consectetur commodi
+					reprehenderit.</li>
+				<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quaerat ipsam doloremque eius
+					maiores, consectetur ullam natus temporibus nobis iste similique quis ratione deleniti consequuntur
+					pariatur obcaecati commodi reiciendis officia!</li>
+				<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quaerat ipsam doloremque eius
+					maiores, consectetur ullam natus temporibus nobis iste similique quis ratione deleniti consequuntur
+					pariatur obcaecati commodi reiciendis officia!</li>
+				<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quaerat ipsam doloremque eius
+					maiores, consectetur ullam natus temporibus nobis iste similique quis ratione deleniti consequuntur
+					pariatur obcaecati commodi reiciendis officia!</li>
+			</ul>
+			<p class="des">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione facere distinctio, harum deleniti
+				consequuntur sit aut quisquam, nulla, consequatur corrupti tempore beatae id dolore voluptatum fugit
+				perferendis perspiciatis. Fugit, itaque! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+				Corrupti molestias exercitationem et tenetur deleniti? Voluptatibus dolor, soluta accusamus laudantium
+				obcaecati placeat non vitae dignissimos ullam. Natus officia iste aliquid aliquam.
+
+			</p>
+
+
+			<h1 class="subh2"> Ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit</h1>
+
+			<p class="des">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione facere distinctio, harum deleniti
+				consequuntur sit aut quisquam, nulla, consequatur corrupti tempore beatae id dolore voluptatum fugit
+				perferendis perspiciatis. Fugit, itaque! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+				Corrupti molestias exercitationem et tenetur deleniti? Voluptatibus dolor, soluta accusamus laudantium
+				obcaecati placeat non vitae dignissimos ullam. Natus officia iste aliquid aliquam?
+
+			</p>
+
+
+
+			<ol class="unorderedlist">
+				<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, cupiditate at vero recusandae
+					aliquam consequatur necessitatibus asperiores. Reprehenderit id, animi sed nobis laborum ducimus,
+					est sequi suscipit quo dolorum obcaecati?</li>
+				<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quaerat ipsam doloremque eius
+					maiores, consectetur ullam natus temporibus nobis iste similique quis ratione deleniti consequuntur
+					pariatur obcaecati commodi reiciendis officia!</li>
+				<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quaerat ipsam doloremque eius
+					maiores, consectetur ullam natus temporibus nobis iste similique quis ratione deleniti consequuntur
+					pariatur obcaecati commodi reiciendis officia!</li>
+				<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quaerat ipsam doloremque eius
+					maiores, consectetur ullam natus temporibus nobis iste similique quis ratione deleniti consequuntur
+					pariatur obcaecati commodi reiciendis officia!</li>
+			</ol>
+
+
+			<p class="des">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione facere distinctio, harum deleniti
+				consequuntur sit aut quisquam, nulla, consequatur corrupti tempore beatae id dolore voluptatum fugit
+				perferendis perspiciatis. Fugit, itaque! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+				Corrupti molestias exercitationem et tenetur deleniti? Voluptatibus dolor.
+
+			</p>
+
+
+
+
+			<h1 class="subh2"> Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h1>
+
+
+
+
+
+			<table>
+
+
+				<thead>
+					<tr>
+						<th>Company</th>
+						<th></th>
+						<th>Contract</th>
+						<th>Country</th>
+					</tr>
+
+				</thead>
+
+				<tbody>
+					<tr>
+						<td>Alfreds Futterkiste</td>
+						<td></td>
+						<td>Maria Anders</td>
+						<td>Germany</td>
+					</tr>
+					<tr>
+						<td>Centro Comercial Moctezuma</td>
+						<td></td>
+						<td>Francisco Chang</td>
+						<td>Mexico</td>
+					</tr>
+					<tr>
+						<td>Ernst Handel</td>
+						<td></td>
+						<td>Roland Mendel</td>
+						<td>Austria</td>
+					</tr>
+					<tr>
+						<td>Island Trading</td>
+						<td></td>
+						<td>Helen Bennett</td>
+						<td>UK</td>
+					</tr>
+					<tr>
+						<td>Laughing Bacchus Winecellars</td>
+						<td></td>
+						<td>Yoshi Tannamuri</td>
+						<td>Canada</td>
+					</tr>
+					<tr>
+						<td>Magazzini Alimentari Riuniti</td>
+						<td></td>
+						<td>Giovanni Rovelli</td>
+						<td>Italy</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+
+
+
+		<div class="bottom">
+
+			<ul class="bottomlist">
+
+
+				<li class="toplistother">Home</li>
+				<li class="toplistother">Articles</li>
+				<li class="toplistother">Interests</li>
+
+
+
+			</ul>
+			<p>2568 Ambercove St. New Town, XState 82085</p>
+
+			<p style="color:#7291a7">joe@example.com</p>
+
+			<div>&copy; 2021-2025 All Rights Reserved</div>
+
+
+		</div>
+
+
+	</main>
+</body>
+
+</html>

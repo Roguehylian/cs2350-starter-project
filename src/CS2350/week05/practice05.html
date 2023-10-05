@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="robots" content="index,follow">
+	<meta name="description" content="a newsletter page">
+	<title>Document</title>
+
+	<!-- Would be used if we were linking a seperate .css file to the html file. -->
+	<!-- <link rel="stylesheet" href="style.css"> -->
+
+</head>
+
+
+<!-- Put css here -->
+
+<style>
+	* {
+	box-sizing: border-box;
+}
+
+body {
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+}
+
+
+.article1>header {
+	color: black;
+	font-size: 1.5rem;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	margin-bottom: 20px;
+
+
+}
+
+
+
+.tables{
+
+display:table;
+
+
+}
+
+.tables .col{
+padding: 10px;
+display: table-cell;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+img{
+float: left;
+width:400px;
+height: 260px;
+padding-right: 20px;
+
+
+}
+
+.imgcontainer{
+	margin: 50px;
+	width: 90%;
+	padding: 8px;
+}
+
+.imagetext{
+text-align: justify;
+
+
+}
+
+
+
+.tab1 {
+	display: inline;
+
+	float: left;
+	color: coral;
+
+	margin: 0px 0px 5px 10px;
+
+}
+
+.tab2 {
+	display: inline;
+
+	float: right;
+	color: coral;
+
+	margin: 0px 10px 5px 10px;
+
+}
+
+.listheader {
+	font-size: 1.1rem;
+	text-align: left;
+	float: inline-start;
+	margin-left: 0;
+	color: black;
+	margin-top: 0;
+	margin: 0 0 0 0;
+	padding-top: 4px;
+
+
+
+}
+
+
+.ender{
+	font-size: 1.1rem;
+	text-align: left;
+	float: inline-start;
+	margin-left: 0;
+	color: black;
+	margin-top: 0;
+	margin: 0 0 0 0;
+	padding-top: 4px;
+
+
+
+
+}
+
+
+
+.bottom{
+
+	border-top: 2px solid black;
+	padding-top: 2rem;
+	padding-top: .5rem;
+
+	margin: 0px 0px 10px 0px;
+
+
+
+
+}
+
+
+.top {
+
+
+
+
+	border-bottom: 2px solid black;
+	padding-bottom: 2rem;
+	padding-top: .5rem;
+
+	margin: 0px 0px 10px 0px;
+
+
+
+}
+
+
+.notheader {
+
+	margin-right: 50px;
+	margin-left: 50px;
+
+
+
+}
+
+.notheader img {
+
+	max-width: 500px;
+	max-height: 250px;
+}
+
+
+header>h1>.subtitle {
+	display: block;
+	font-size: 1.5rem;
+	border-top: 1px solid maroon;
+	padding-top: 1rem;
+	margin-top: 1rem;
+}
+
+.toph>img {
+	width: 100%;
+}
+
+/* Cards */
+.cards {
+	text-align: center;
+	padding-left: 0px;
+	
+}
+
+.cards>div {
+	display: inline-block;
+	width: 15%;
+	
+	margin: 10px;
+	padding: 10px;
+	vertical-align: bottom;
+	height: 300px;
+}
+
+.cards>div>ul,
+.cards>div>p {
+	text-align: left;
+}
+
+.cards>div>h2 {
+
+	background-color: black;
+	border: 1px color white;
+	width: 200px;
+	height: 200px;
+	border-radius: 120px;
+	line-height: 200px;
+	display: inline-block; 
+}
+
+
+
+.cardtext{
+text-align:center;
+color: white;
+font-size: 1.6rem;
+
+
+
+}
+blockquote {
+	font-size: 2rem;
+	color: maroon;
+	text-align: center;
+}
+
+blockquote::before,
+blockquote::after {
+	content: '"';
+	font-size: 2rem;
+	color: gray;
+
+}
+
+table {
+	width: 98%;
+	margin: 10px;
+	border-collapse: collapse;
+}
+
+table>thead {
+	color: white;
+	font-size: 1.2rem;
+	background-color: rosybrown;
+}
+
+thead th,
+body td {
+	padding: 10px 0;
+}
+
+tbody tr:nth-child(odd) {
+	background-color: white;
+}
+
+tbody tr:nth-child(even) {
+	background-color: #eee;
+}
+
+.highlighted {
+	background-color: thistle;
+	margin: 10px;
+	padding: 10px;
+	overflow: auto;
+
+
+}
+
+.highlighted img {
+	float: right;
+	border: 2px dashed green;
+	margin: 1rem;
+}
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+</style>
+
+
+<body>
+	<main>
+		<h1 class="listheader"><strong>Floated Menus:</strong></h1>
+		<header>
+
+
+			<ul class="top">
+
+				<li class="tab1">
+					One
+				</li>
+
+				<li class="tab1">
+					Two
+				</li>
+
+				<li class="tab2">
+					Three
+				</li>
+
+				<li class="tab2">
+					Four
+				</li>
+
+
+			</ul>
+
+		</header>
+
+
+
+
+
+		<section class="notheader">
+
+
+
+
+			<section class="article1">
+				<header><strong> <span style="color: coral;">&lt;Article 1&gt;:</span> Wrapping text around an
+						image</strong></header>
+
+
+				<div class="imgcontainer">
+					<img src="https://c8.alamy.com/comp/2J55XNC/jicin-czech-republic-january-222022urban-monument-reservation-of-czech-historic-town-in-bohemian-paradiserectangular-square-with-arcade-renaissanc-2J55XNC.jpg"
+						alt="Description goes here">
+					<h2>Lorem ipsum dolor sit amet consectetur adipisicing</h2>
+
+					<p class="imagetext">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione facere distinctio, harum
+						deleniti
+						consequuntur sit aut quisquam, nulla, consequatur corrupti tempore beatae id dolore voluptatum
+						fugit
+						perferendis perspiciatis. Fugit, itaque! Lorem ipsum dolor sit amet consectetur adipisicing
+						elit. Dolores excepturi accusantium ad sapiente accusamus asperiores commodi id, reprehenderit
+						dolorem adipisci maxime est, ipsum voluptates repellat neque, saepe porro nam! Fugiat! Lorem
+						ipsum dolor sit amet consectetur adipisicing elit. Rem illum in earum itaque hic, ipsam maxime
+						quibusdam ullam architecto? Perspiciatis, nisi dolor nobis eveniet corrupti ducimus? Dignissimos
+						nulla vero voluptatibus? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium
+						dolorum, dolorem voluptatem ducimus quae autem ut non rem at incidunt dicta sequi assumenda
+						voluptate facere eveniet, fuga eum optio ullam? Lorem ipsum dolor sit amet consectetur
+						adipisicing elit. Fugiat provident nam accusantium unde sequi, suscipit placeat deserunt
+						quisquam velit minus assumenda nihil ullam cupiditate quis, quae ipsa voluptates culpa est!
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum repellat itaque nam nihil error
+						odit unde beatae odio! Amet cupiditate ut voluptates asperiores necessitatibus maxime
+						laudantium, nobis aliquid debitis quam. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Esse, veritatis fugiat earum ut ipsa impedit dolor necessitatibus ullam. Numquam totam fugit
+						obcaecati a natus excepturi doloribus harum recusandae nulla quaerat! Lorem ipsum dolor sit amet
+						consectetur adipisicing elit. Cupiditate deserunt, est repudiandae dicta eveniet rerum accusamus
+						aliquid, possimus natus ex culpa id, neque quasi. Ullam non optio voluptatibus suscipit ipsam?
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt labore eveniet commodi eius
+						tenetur accusantium minus exercitationem, nihil consectetur, nemo iste voluptatibus, numquam
+						necessitatibus quidem asperiores fugit. Perferendis, minus nulla.
+				</div>
+			</section>
+
+
+
+
+
+
+
+
+
+			<section class="article1">
+				<header><strong> <span style="color: coral;">&lt;Article 2&gt;:</span> Centering text
+						vertically</strong></header>
+
+
+				<div class="cards">
+
+
+					<div class="cards">
+						<h2 class="cardtext">Selectors</h2>
+
+					</div>
+					<div class="cards">
+						<h2 class="cardtext">Inheritance</h2>
+
+					</div>
+					<div class="cards">
+						<h2 class="cardtext">Cascade</h2>
+
+					</div>
+
+					<div class="cards">
+						<h2 class="cardtext">Specificity</h2>
+
+					</div>
+				</div>
+			</section>
+
+			
+			<header style="font-size: 1.5rem; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"><strong> <span style="color: coral;">&lt;Article 2&gt;:</span> Equal-height columns</strong>
+			</header>
+			
+
+			
+			<section class="tables">
+				
+
+				
+
+				<div class="col" style="width: 20%; background-color: whitesmoke;">First section Lorem, ipsum dolor sit
+					amet consectetur adipisicing elit. Sint natus suscipit libero nemo commodi quis minus ut repellat
+					consequatur voluptatibus, quas vitae tenetur et beatae deserunt, aspernatur facilis. Voluptate,
+					laudantium.</div>
+				<div class="col" style="width: 60%; background-color: black;color: white;">First section Lorem, ipsum
+					dolor sit
+					amet consectetur adipisicing elit. Sint natus suscipit libero nemo commodi quis minus ut repellat
+					consequatur voluptatibus, quas vitae tenetur et beatae deserunt, aspernatur facilis. Voluptate,
+					laudantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quibusdam repellendus hic
+					doloribus earum dicta, aspernatur molestias ea velit doloremque eligendi rem, numquam eos assumenda,
+					totam tenetur! Officiis, quaerat totam!</div>
+				<div class="col" style="width: 20%; background-color: whitesmoke;">First section Lorem, ipsum dolor sit
+					amet consectetur adipisicing elit. Sint natus suscipit libero nemo commodi quis minus ut repellat
+					consequatur voluptatibus, quas vitae tenetur et beatae deserunt, aspernatur facilis. Voluptate,
+					laudantium.</div>
+
+				</section>
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</section>
+			
+
+
+
+		
+		<h1 class="ender"><strong>Matthew Mendoza</strong></h1>
+		<header>
+	
+	
+			<ul class="bottom">
+	
+	
+	
+	
+	
+				<li class="tab2">
+					<span style="color: black;">&copy; All rights reserved</span>
+				</li>
+	
+	
+			</ul>
+	
+		</header>
+
+
+	</main>
+</body>
+
+</html>
