@@ -430,7 +430,7 @@ width: 100%;
 
 .actualcards>div {
 	display: inline-block;
-	width: 80%;
+	width: 90%;
 	background-color: white;
 	border: 1px solid lightgrey;
 	margin: 0px;
@@ -444,6 +444,39 @@ width: 100%;
 	text-align: left;
 }
 
+
+
+
+/*                      */
+.actualcards2 {
+	width: auto;
+
+	
+}
+
+.actualcards2 div>img {
+width: 100%;
+	text-align: left;
+
+
+}
+
+.actualcards2>div {
+	display: inline-block;
+	width: 80%;
+	border-radius: 15px;
+	background-color: rgb(203, 203, 203);
+	border: 1px solid lightgrey;
+	margin: 0px;
+	padding: 15px;
+	vertical-align: top;
+	height: 934px;
+}
+
+.actualcards2>div>ul,
+.actualcards2>div>p {
+	text-align: left;
+}
 
 
 
