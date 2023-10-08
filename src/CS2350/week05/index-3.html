@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="robots" content="index,follow">
+	<meta name="description" content="a newsletter page">
+	<title>assignment4</title>
+
+	<!-- Would be used if we were linking a seperate .css file to the html file. -->
+	<!-- <link rel="stylesheet" href="style.css"> -->
+
+</head>
+
+
+<!-- Put css here -->
+<style>
+	body {
+		margin: 0;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 16px;
+	}
+
+
+	.article1>header {
+		color: black;
+		font-size: 1.5rem;
+		font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+		margin-bottom: 20px;
+
+
+	}
+
+
+	main {
+
+		margin: 0;
+		padding: 0;
+	}
+
+
+	.tables {
+
+		display: table;
+
+
+	}
+
+	.tables .col {
+		padding: 10px;
+		display: table-cell;
+
+
+	}
+
+
+	.firstsection {
+
+		border-bottom: 2px solid lightgray;
+		padding-top: 2rem;
+
+		margin: 0px 0px 10px 0px;
+
+
+
+
+	}
+
+
+
+
+
+
+
+
+
+	.videocontainer {
+		float: right;
+		width: 560px;
+		height: 315px;
+		padding-left: 150px;
+
+
+	}
+
+
+
+	.imagetext {
+
+		color: rgb(102, 102, 102);
+		text-align: justify;
+
+
+	}
+
+
+
+	.tab1 {
+		display: inline;
+
+		float: left;
+		color: coral;
+
+		margin: 0px 0px 5px 10px;
+
+	}
+
+	.tab2 {
+		display: inline;
+
+		float: right;
+		color: coral;
+
+		margin: 0px 10px 5px 10px;
+
+	}
+
+	.tab3 {
+		display: inline;
+
+		float: left;
+		color: coral;
+
+		margin: 0px 0px 5px 10px;
+		padding-left: 50px;
+	}
+
+	.tab4 {
+		display: inline;
+
+		float: right;
+		color: black;
+
+		padding-right: 400px;
+
+		margin: 0px 10px 5px 10px;
+
+	}
+
+
+
+
+
+
+
+
+
+
+	.listheader {
+
+
+		font-size: 1.1rem;
+		text-align: left;
+		float: inline-start;
+		margin-left: 0;
+		color: black;
+
+		margin: 0 0 0 0;
+		padding-top: 15px;
+		padding-left: 15px;
+
+	}
+
+
+
+
+	.ender {
+		font-size: 1.1rem;
+		text-align: left;
+		float: inline-start;
+		margin-left: 0;
+		color: black;
+		margin-top: 0;
+		margin: 0 0 0 0;
+		padding-top: 4px;
+
+
+
+
+	}
+
+
+
+	.bottom {
+
+		border-top: 2px solid black;
+		padding-top: 2rem;
+		padding-top: .5rem;
+
+		margin: 0px 0px 10px 0px;
+
+
+
+
+	}
+
+
+	.top {
+
+
+		background-color: rgb(206, 206, 206);
+
+		border-bottom: 2px solid rgb(175, 175, 175);
+		padding-bottom: 2rem;
+		padding-top: 1rem;
+
+		margin: 0px 0px 10px 0px;
+
+
+
+	}
+
+	.bottom {
+
+
+		background-color: rgb(255, 255, 255);
+
+
+		padding-bottom: 1.5rem;
+		padding-top: 1rem;
+
+		margin: 0px 0px 10px 0px;
+
+
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+	.notheader {
+
+		margin-right: 300px;
+		margin-left: 300px;
+
+
+
+	}
+
+	.notheader img {
+
+		max-width: 500px;
+		max-height: 250px;
+	}
+
+
+	header>h1>.subtitle {
+		display: block;
+		font-size: 1.5rem;
+		border-top: 1px solid maroon;
+		padding-top: 1rem;
+		margin-top: 1rem;
+	}
+
+	.toph>img {
+		width: 100%;
+	}
+
+	/* Buttons */
+
+	.buttons {
+		text-align: left;
+		padding-left: 0px;
+		padding-right: 0px;
+
+	}
+
+
+	.lastbutton {
+		text-align: right;
+
+
+	}
+
+
+
+
+	.buttons>div {
+		display: inline-block;
+		width: 12%;
+
+		margin: 5px;
+		padding: 10px;
+		vertical-align: bottom;
+		height: 120px;
+	}
+
+
+	.buttons>.cardlast {
+
+		width: 100%;
+		text-align: center;
+
+
+
+		height: 120px;
+	}
+
+
+	.buttons>div>ul,
+	.buttons>div>p {
+		text-align: left;
+	}
+
+	.buttons>div>h2 {
+
+		background-color: coral;
+		border: 1px color black;
+		width: 170px;
+		height: 75px;
+		border-radius: 10px;
+		line-height: 75px;
+		display: inline-block;
+	}
+
+
+	.buttons>.cards1 {
+
+
+		border: 1px color black;
+		width: 170px;
+		height: 120px;
+		border-radius: 10px;
+		line-height: 75px;
+		display: inline-block;
+	}
+
+
+
+
+
+
+
+
+
+
+	.buttontext {
+		text-align: center;
+		color: white;
+		font-size: 1.4rem;
+
+
+
+	}
+
+
+
+	.cards1 {
+		width: 160px;
+		text-align: center;
+		padding-left: 0px;
+
+	}
+
+
+
+	/*  */
+
+	/* Cards */
+	.actualcards {
+		width: auto;
+
+		text-align: center;
+	}
+
+	.actualcards div>img {
+
+		text-align: left;
+
+
+	}
+
+	.actualcards>div {
+		display: inline-block;
+		width: 30%;
+		background-color: white;
+		border: 1px solid lightgrey;
+		margin: 0px;
+		padding: 15px;
+		vertical-align: top;
+		height: 450px;
+	}
+
+	.actualcards>div>ul,
+	.actualcards>div>p {
+		text-align: left;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	.cards>div {
+		display: inline-block;
+		width: 15%;
+
+		margin: 10px;
+		padding: 10px;
+		vertical-align: bottom;
+		height: 300px;
+	}
+
+	.cards>div>ul,
+	.cards>div>p {
+		text-align: left;
+	}
+
+	.cards>div>h2 {
+
+		background-color: black;
+		border: 1px color white;
+		width: 200px;
+		height: 200px;
+		border-radius: 120px;
+		line-height: 200px;
+		display: inline-block;
+	}
+
+
+
+	.cardtext {
+		text-align: left;
+		color: white;
+		font-size: 1.6rem;
+
+
+
+	}
+
+	blockquote {
+		font-size: 2rem;
+		color: maroon;
+		text-align: center;
+	}
+
+	blockquote::before,
+	blockquote::after {
+		content: '"';
+		font-size: 2rem;
+		color: gray;
+
+	}
+
+
+
+
+
+
+
+
+	table {
+		background-color: rgb(51, 51, 51);
+		width: 100%;
+		padding: 0px;
+
+		table-layout: fixed;
+
+		border-collapse: collapse;
+	}
+
+
+
+	table>thead {
+		padding-top: 20px;
+		padding-left: 10px;
+
+		text-align: left;
+
+		font-size: 1.2rem;
+
+	}
+
+
+
+
+	th,
+	body {
+		color: black;
+
+	}
+
+
+	th {
+
+		padding: 10px;
+		padding-top: 1.5rem;
+		padding-left: 1.5rem;
+		color: white;
+	}
+
+	thead {
+
+		padding: 10px;
+
+
+
+	}
+
+	td {
+		padding: 10px;
+		padding-left: 1.5rem;
+		padding-bottom: 20px;
+		color: coral;
+	}
+
+
+	.thirdsection {
+		padding: 0px;
+		margin: 0px;
+
+	}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body>
+	<main>
+		<h1 class="listheader"> <span style="color: grey;">Utah Mighty </span><strong>FIVE</strong></h1>
+		<header>
+
+
+			<ul class="top">
+
+				<li class="tab1">
+					One
+				</li>
+
+				<li class="tab1">
+					Two
+				</li>
+				<li class="tab1">
+					Three
+				</li>
+
+				<li class="tab1">
+					Four
+				</li>
+				<li class="tab1">
+					Five
+				</li>
+
+
+
+
+
+
+
+
+
+
+				<li class="tab2">
+					Login
+				</li>
+
+				<li class="tab2">
+					Account
+				</li>
+
+
+			</ul>
+
+		</header>
+
+
+
+
+
+		<section class="notheader">
+
+
+
+
+
+			<div class="firstsection">
+				<div class="videocontainer">
+
+					<div class="youtube-embed"> <iframe width="560" height="315"
+							src="https://www.youtube.com/embed/iKJ-TuDl8h0?si=hQkExI7nJ_Nzt69j"
+							title="YouTube video player"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+							allowfullscreen></iframe> </div>
+
+
+
+
+				</div>
+
+
+				<div>
+					<h2 style="font-size: 3rem;">Close your eyes and open your mind</h2>
+
+					<p class="imagetext">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione facere distinctio, harum
+						deleniti
+						consequuntur sit aut quisquam, nulla, consequatur corrupti tempore beatae id dolore voluptatum
+						fugit.
+					</p>
+
+					<a class="buttons">
+
+
+						<div class="cards">
+							<h2 class="buttontext">Take a tour</h2>
+
+						</div>
+						<div class="cards1">
+							<h2 class="buttontext">Start a free trial
+							</h2>
+
+						</div>
+
+					</a>
+
+				</div>
+
+			</div>
+
+
+			<div class="secondsection">
+
+
+				<section class="actualcards">
+					<div class="actualcards">
+						<img src="https://images.unsplash.com/photo-1695718948137-1f4d1d5ba889?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+							alt="">
+						<h2>Random cool picture of a forest in twilight.</h2>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero qui deserunt reiciendis eaque
+							maiores esse sapiente cupiditate mollitia! Nulla nostrum corrupti nesciunt error laborum.
+							Esse harum sapiente nemo cum magni.
+
+
+
+						</p>
+					</div>
+
+
+
+
+
+					<div class="actualcards">
+						<img src="https://images.unsplash.com/photo-1695748216442-5eaad91860f2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDV8NnNNVmpUTFNrZVF8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+							alt="">
+						<h2>Picture of Beautfiul mountains</h2>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque sapiente nesciunt modi maxime
+							ullam nulla non laboriosam quos doloremque obcaecati inventore ab, tempora consectetur
+							deserunt ipsam eius debitis temporibus laudantium.</p>
+					</div>
+					<div class="actualcards">
+						<img src="https://images.unsplash.com/photo-1695631590069-08dfd73bdb83?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDh8NnNNVmpUTFNrZVF8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+							alt="">
+						<h2>Picture of foggy mountains</h2>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo voluptate hic odio veritatis
+							vel illo officiis sapiente voluptatem. Harum, quasi vel magnam ipsum voluptates dolor
+							delectus vero recusandae maiores impedit?</p>
+					</div>
+				</section>
+
+				<!-- Remaining button goes here. -->
+
+				<a class="buttons">
+
+
+					<div class="cardlast">
+						<h2 class="buttontext">Take a tour</h2>
+
+					</div>
+				</a>
+
+			</div>
+
+
+
+
+
+
+			<!--  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</section>
+
+
+
+
+
+
+		<div class="thirdsection">
+
+			<table>
+
+
+				<thead>
+					<tr>
+						<th>Offices</th>
+						<th>Links</th>
+						<th>Contact</th>
+						<th>Locations</th>
+					</tr>
+
+				</thead>
+
+				<tbody>
+					<tr>
+						<td>One</td>
+						<td>One</td>
+						<td>Twitter</td>
+						<td>One</td>
+					</tr>
+					<tr>
+						<td>Two</td>
+						<td>Two</td>
+						<td>Facebook</td>
+						<td>Two</td>
+					</tr>
+					<tr>
+						<td>Three</td>
+						<td>Three</td>
+						<td>Instagram</td>
+						<td>Three</td>
+					</tr>
+					<tr>
+						<td>Four</td>
+						<td>Four</td>
+						<td>Pinterest</td>
+						<td>Four</td>
+					</tr>
+
+				</tbody>
+			</table>
+
+
+		</div>
+
+
+
+
+
+		<header>
+
+
+			<ul class="bottom">
+
+				<li class="tab3">
+					Legal
+				</li>
+
+				<li class="tab3">
+					Partner
+				</li>
+				<li class="tab3">
+					Explore
+				</li>
+
+				<li class="tab4">
+					&copy; <strong>All rights reserved</strong>
+				</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+			</ul>
+
+		</header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</main>
+
+</body>
+
+</html>
