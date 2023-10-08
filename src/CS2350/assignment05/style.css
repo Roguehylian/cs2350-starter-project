@@ -83,8 +83,9 @@ main {
 .tab1 {
 	display: inline;
 
-	float: left;
+	float: center;
 	color: coral;
+	padding: 0 10px 0 10px;
 
 	margin: 0px 0px 5px 10px;
 
@@ -93,7 +94,7 @@ main {
 .tab2 {
 	display: inline;
 
-	float: right;
+	float: center;
 	color: coral;
 
 	margin: 0px 10px 5px 10px;
@@ -103,7 +104,7 @@ main {
 .tab3 {
 	display: inline;
 
-	float: left;
+	float: center;
 	color: coral;
 
 	margin: 0px 0px 5px 10px;
@@ -113,12 +114,31 @@ main {
 .tab4 {
 	display: inline;
 
-	float: right;
+	float: center;
 	color: black;
 
 	padding-right: 400px;
 
 	margin: 0px 10px 5px 10px;
+
+}
+
+
+.tabsearch{
+
+	background-color: rgb(216, 216, 216);
+	color: grey;
+	border: 1px color black;
+	width: 400px;
+	height: 50px;
+	border-radius: 20px;
+	line-height: 50px;
+	display: inline-block;
+	text-align: center;
+margin-right: 30px;
+	
+	padding-top: 0px;
+
 
 }
 
@@ -131,7 +151,7 @@ main {
 
 
 
-.listheader {
+.listheader1 {
 
 
 	font-size: 1.1rem;
@@ -139,11 +159,31 @@ main {
 	float: inline-start;
 	margin-left: 0;
 	color: black;
+	padding-bottom: 1rem;
+	padding-top: 22px;
 
-	margin: 0 0 0 0;
-	padding-top: 15px;
-	padding-left: 15px;
 
+	margin: 0px 10px 0px 0px;
+	
+
+
+}
+
+
+
+.listheader2 {
+
+
+	font-size: 1.1rem;
+	text-align: left;
+	float: inline-start;
+	margin-left: 0;
+	color: black;
+	padding-bottom: 1rem;
+
+
+	margin: 0px 10px 0px 0px;
+	
 }
 
 
@@ -180,20 +220,45 @@ main {
 }
 
 
-.top {
+.top1 {
+
+padding-top: 10px;
+padding-bottom: 4rem;
+	background-color: rgb(255, 255, 255);
+margin-top: 1px;
+margin-bottom: 0px;
+	
+	
+	
+
+}
 
 
-	background-color: rgb(206, 206, 206);
+.top1 > li{
+float:right;
 
-	border-bottom: 2px solid rgb(175, 175, 175);
+
+}
+.top2 {
+
+	margin-top: 0px;
+	background-color: rgb(213, 213, 213);
+
+	line-height: 0px;
+	
+padding-top:30px;
 	padding-bottom: 2rem;
-	padding-top: 1rem;
+	text-align: center;
+	
+	
+	
 
-	margin: 0px 0px 10px 0px;
+	
 
 
 
 }
+
 
 .bottom {
 
@@ -353,11 +418,11 @@ header>h1>.subtitle {
 .actualcards {
 	width: auto;
 
-	text-align: center;
+	
 }
 
 .actualcards div>img {
-
+width: 100%;
 	text-align: left;
 
 
@@ -365,7 +430,7 @@ header>h1>.subtitle {
 
 .actualcards>div {
 	display: inline-block;
-	width: 30%;
+	width: 80%;
 	background-color: white;
 	border: 1px solid lightgrey;
 	margin: 0px;
@@ -514,3 +579,73 @@ td {
 	margin: 0px;
 
 }
+
+
+
+.flex-container {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: normal;
+	align-items: baseline;
+	align-content: stretch;
+  }
+
+
+
+  
+  .flex-items:nth-child(1) {
+	display: block;
+	flex-grow: 0;
+	flex-shrink: 1;
+	flex-basis: auto;
+	align-self: auto;
+	order: 0;
+	
+	
+  }
+  
+  .flex-items:nth-child(2) {
+	display: block;
+	flex-grow: 0;
+	flex-shrink: 1;
+	flex-basis: auto;
+	align-self: auto;
+	order: 0;
+  }
+
+
+  .flex-items:nth-child(3) {
+	display: block;
+	flex-grow: 0;
+	flex-shrink: 1;
+	flex-basis: auto;
+	align-self: auto;
+	order: 0;
+  }
+
+
+
+
+  @media (min-width: 800px) {
+	.wrapper {
+	  display: grid;
+	  grid-template-columns: 200px 1fr;
+	  grid-gap: 16px;
+	}
+  
+	aside {
+	  align-self: start;
+	}
+  }
+
+  .wrapper {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-gap: 16px;
+  }
+
+
+
+  
+
