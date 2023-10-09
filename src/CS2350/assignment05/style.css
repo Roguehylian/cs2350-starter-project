@@ -468,7 +468,7 @@ header>h1>.subtitle {
 	display: inline-block;
 	width: 650px;
 	background-color: white;
-	border: 1px solid lightgrey;
+	border-bottom: 1px solid lightgrey;
 	margin: 0px;
 	padding: 15px;
 	vertical-align: top;
@@ -654,9 +654,7 @@ td {
 
 /* Mobile View */
 @media all and (min-width: 400px) {
-	main {
-		background-color: rgb(216, 140, 140);
-	}
+	
 
 
 
@@ -704,7 +702,7 @@ float: left;
 		display: inline-block; 
 		width: 400px;
 		background-color: white;
-		border: 1px solid lightgrey;
+		border-bottom: 1px solid lightgrey;
 		margin: 0px;
 		padding: 15px;
 		padding-top: 20px;
@@ -767,10 +765,7 @@ padding-left: 150px;
 
 /* Tablet view */
 @media all and (min-width: 700px) {
-	main {
-		background-color: rgb(120, 120, 187);
-
-	}
+	
 
 
 
@@ -869,7 +864,7 @@ padding-left: 150px;
 	display: inline-block;
 	width: 650px;
 	background-color: white;
-	border: 1px solid lightgrey;
+	border-bottom: 1px solid lightgrey;
 	margin: 0px;
 	padding: 15px;
 	vertical-align: top;
@@ -902,10 +897,6 @@ padding-left: 150px;
 
 /* Desktop view */
 @media all and (min-width: 1000px) {
-	main {
-		background-color: rgb(19, 63, 64);
-		width: auto;
-	}
 
 
 	.top2{
@@ -1006,7 +997,9 @@ float: left;
 	display: inline-block;
 	width: 580px;
 	background-color: white;
-	border: 1px solid lightgrey;
+	
+	border-bottom: 1px solid lightgrey; ;
+
 	margin: 0px;
 	padding: 15px;
 	vertical-align: top;
