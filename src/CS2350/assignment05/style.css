@@ -1,4 +1,3 @@
-
 body {
 	margin: 0;
 	font-family: Arial, Helvetica, sans-serif;
@@ -15,6 +14,7 @@ body {
 
 
 }
+
 
 
 main {
@@ -105,26 +105,26 @@ main {
 	display: inline;
 
 	float: center;
-	color: coral;
+	color: rgb(255, 255, 255);
 
-	margin: 0px 0px 5px 10px;
-	padding-left: 50px;
+	margin: 0px 0px 0px 0px;
+	padding-left: 5px;
 }
 
 .tab4 {
 	display: inline;
 
-	float: center;
-	color: black;
+	float: right;
+	color: rgb(255, 255, 255);
 
-	padding-right: 400px;
+	padding-right: 25px;
 
 	margin: 0px 10px 5px 10px;
 
 }
 
 
-.tabsearch{
+.tabsearch {
 
 	background-color: rgb(216, 216, 216);
 	color: grey;
@@ -135,8 +135,26 @@ main {
 	line-height: 50px;
 	display: inline-block;
 	text-align: center;
-margin-right: 30px;
-	
+	margin-right: 30px;
+
+	padding-top: 0px;
+
+
+}
+
+.morebutton {
+
+	background-color: coral;
+	color: rgb(255, 255, 255);
+	border: 1px color black;
+	width: 200px;
+	height: 50px;
+	border-radius: 20px;
+	line-height: 50px;
+	display: inline-block;
+	text-align: center;
+	margin-right: 30px;
+
 	padding-top: 0px;
 
 
@@ -161,10 +179,11 @@ margin-right: 30px;
 	color: black;
 	padding-bottom: 1rem;
 	padding-top: 22px;
+	padding-left: 10px;
 
 
 	margin: 0px 10px 0px 0px;
-	
+
 
 
 }
@@ -183,7 +202,7 @@ margin-right: 30px;
 
 
 	margin: 0px 10px 0px 0px;
-	
+
 }
 
 
@@ -207,11 +226,11 @@ margin-right: 30px;
 
 
 .bottom {
+width: 80%;
 
-	border-top: 2px solid black;
 	padding-top: 2rem;
 	padding-top: .5rem;
-
+padding-right: 0px;
 	margin: 0px 0px 10px 0px;
 
 
@@ -222,38 +241,39 @@ margin-right: 30px;
 
 .top1 {
 
-padding-top: 10px;
-padding-bottom: 4rem;
+	padding-top: 10px;
+	padding-bottom: 4rem;
 	background-color: rgb(255, 255, 255);
-margin-top: 1px;
-margin-bottom: 0px;
-	
-	
-	
-
-}
+	margin-top: 1px;
+	margin-bottom: 0px;
 
 
-.top1 > li{
-float:right;
 
 
 }
+
+
+.top1>li {
+	float: right;
+
+
+}
+
 .top2 {
 
 	margin-top: 0px;
 	background-color: rgb(213, 213, 213);
 
 	line-height: 0px;
-	
-padding-top:30px;
+
+	padding-top: 30px;
 	padding-bottom: 2rem;
 	text-align: center;
-	
-	
-	
 
-	
+
+
+
+
 
 
 
@@ -263,13 +283,13 @@ padding-top:30px;
 .bottom {
 
 
-	background-color: rgb(255, 255, 255);
+	background-color: rgb(116, 116, 116);
 
 
-	padding-bottom: 1.5rem;
 	padding-top: 1rem;
+	padding-bottom: 1rem;
 
-	margin: 0px 0px 10px 0px;
+	margin: 0px 0px 0px 0px;
 
 
 
@@ -291,7 +311,7 @@ padding-top:30px;
 	margin-right: 300px;
 	margin-left: 300px;
 
-
+margin-bottom: 0;
 
 }
 
@@ -360,6 +380,14 @@ header>h1>.subtitle {
 	text-align: left;
 }
 
+
+.actualcards>h2 {
+
+	margin-top: 0;
+
+
+}
+
 .buttons>div>h2 {
 
 	background-color: coral;
@@ -417,26 +445,34 @@ header>h1>.subtitle {
 /* Cards */
 .actualcards {
 	width: auto;
+	overflow: auto;
+	float: left;
 
-	
+
 }
 
 .actualcards div>img {
-width: 100%;
+	width: 100%;
+	object-fit: cover;
+	width: 230px;
+	height: 230px;
 	text-align: left;
+	float: left;
+	border-radius: 20px;
 
+	margin-right: 10px;
 
 }
 
 .actualcards>div {
 	display: inline-block;
-	width: 90%;
+	width: 650px;
 	background-color: white;
 	border: 1px solid lightgrey;
 	margin: 0px;
 	padding: 15px;
 	vertical-align: top;
-	height: 450px;
+	height: 250px;
 }
 
 .actualcards>div>ul,
@@ -449,13 +485,13 @@ width: 100%;
 
 /*                      */
 .actualcards2 {
-	width: auto;
+	width: 50%;
+	float: left;
 
-	
 }
 
 .actualcards2 div>img {
-width: 100%;
+	width: 100%;
 	text-align: left;
 
 
@@ -463,14 +499,14 @@ width: 100%;
 
 .actualcards2>div {
 	display: inline-block;
-	width: 80%;
+	width: 500px;
 	border-radius: 15px;
 	background-color: rgb(203, 203, 203);
 	border: 1px solid lightgrey;
 	margin: 0px;
 	padding: 15px;
 	vertical-align: top;
-	height: 934px;
+	height: 900px;
 }
 
 .actualcards2>div>ul,
@@ -615,70 +651,250 @@ td {
 
 
 
-.flex-container {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: normal;
-	align-items: baseline;
-	align-content: stretch;
-  }
 
-
-
-  
-  .flex-items:nth-child(1) {
-	display: block;
-	flex-grow: 0;
-	flex-shrink: 1;
-	flex-basis: auto;
-	align-self: auto;
-	order: 0;
-	
-	
-  }
-  
-  .flex-items:nth-child(2) {
-	display: block;
-	flex-grow: 0;
-	flex-shrink: 1;
-	flex-basis: auto;
-	align-self: auto;
-	order: 0;
-  }
-
-
-  .flex-items:nth-child(3) {
-	display: block;
-	flex-grow: 0;
-	flex-shrink: 1;
-	flex-basis: auto;
-	align-self: auto;
-	order: 0;
-  }
-
-
-
-
-  @media (min-width: 800px) {
-	.wrapper {
-	  display: grid;
-	  grid-template-columns: 200px 1fr;
-	  grid-gap: 16px;
+/* Mobile View */
+@media all and (min-width: 400px) {
+	main {
+		background-color: rgb(216, 140, 140);
 	}
-  
-	aside {
-	  align-self: start;
-	}
-  }
 
-  .wrapper {
+
+
+
+	.flex-items2 {
+		display: none;
+
+	}
+
+
+	.notheader{
+		margin: 10px;
+	}
+
+
+	.tabsearch {
+
+		display: none;
+	}
+
+	.top2{
+		display: none;
+	}
+
+
+	.bottom > .tab3{
+
+		display: none;
+
+
+	}
+
+	.bottom > .tab4{
+	display: block;
+	text-align: left;
+	}
+	.bottom{
+text-align: left;
+float: left;
+
+	}
+
+
+
+
+
+
+
+	
+
+}
+
+
+/* Tablet view */
+@media all and (min-width: 700px) {
+	main {
+		background-color: rgb(120, 120, 187);
+
+	}
+
+
+
+
+
+
+
+
+	.actualcards{
+		text-align: center;
+		
+
+
+
+	}
+
+	.flex-items2 {
+		display: none;
+	
+	}
+
+	.tabsearch {
+
+		display: none;
+	}
+
+	.notheader {
+		margin: 10px;
+	}
+
+	.top2{
+		display: block;
+	}
+
+
+	.bottom > .tab3{
+		
+		display: block;
+
+
+	}
+
+
+	.notheader {
+
+		margin-right: 300px;
+		margin-left: 10px;
+	
+	margin-bottom: 0;
+
+	}
+
+	.bottom > .tab3{
+
+		display: inline-block;
+	}
+
+	.bottom > .tab4{
+		display: inline-block;
+		
+		}
+
+
+		.bottom{
+	
+			display: inline-block;
+			width: 100%;
+			
+				}
+
+
+				.bottom > .tab4{
+					display: inline-block;
+					padding-right: 50px;
+					
+					}
+
+
+
+}
+
+/* Desktop view */
+@media all and (min-width: 1000px) {
+	main {
+		background-color: rgb(19, 63, 64);
+		width: auto;
+	}
+
+
+	.top2{
+		display: block;
+	}
+	.flex-items2 {
+		display: flex;
+	}
+	.tabsearch{
+
+		display: block;
+	}
+
+
+	.bottom > .tab3{
+
+		display: inline-block;
+	}
+
+	.bottom > .tab4{
+		display: inline-block;
+		padding-right: 20px;
+		
+		}
+		.bottom{
+	
+	display: inline-block;
+	width: 97.8%;
+	
+		}
+
+		.notheader {
+
+			margin-right: 300px;
+			margin-left: 300px;
+		
+		margin-bottom: 0;
+	
+		}
+
+
+
+
+
+.tab4{
+
+	padding-right: 0px;
+	margin-right: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+aside {
+	margin-left: 200px;
+	padding-left: 1;
+	text-align: left;
+	width: 600px;
+
+}
+
+
+.wrapper>main {
+	white-space: normal;
+	width: 600px;
+	height: 1000px;
+
+
+}
+
+.wrapper {
 	display: grid;
+	white-space: normal;
 	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-	grid-gap: 16px;
-  }
-
-
-
-  
-
+	grid-gap: 10px;
+}
