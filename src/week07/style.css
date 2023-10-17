@@ -1,57 +1,84 @@
 div#page {
-	border:1px solid purple;
-	width:100%;
-	margin:0 auto;
-	padding:5px;
-	text-align:left;
-  }
-  body{
+	border: 1px solid purple;
+	width: 100%;
+	margin: 0 auto;
+	padding: 5px;
+	text-align: left;
+}
+
+body {
+	background-color: #F1F1FC;
+	height: 100vh;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+
+
+}
+
+
+div#notheader {
+
+
+	margin: 0 100px 0 100px;
+	padding: 0 0 0 0;
+
+
+}
+
+div {
+	text-align: center;
+}
+
+
+div#header {
+	border-bottom: solid grey;
+	width: 100%;
+	height: 80px;
+
+}
+
+
+div#menu {
+	border: 2px solid green;
+	width: 250px;
+	float: left;
+	margin: 0px 10px 10px 50px;
+	height: 350px;
+}
+
+div#forum {
 
 
 
-  }
-  
-  div {
-	text-align:center;
-  }
-  
-
-  div#header {
-	border:2px solid red;
-	width:100%;
-	height:30px;
-	
-  }	
 
 
-  div#menu {
-	border:2px solid green;
-	width:200px;
-	float:left;
-	margin:10px 0 10px 5px;
-	height:350px;
-  }
+	border: 2px solid blue;
+	width: 75%;
+	margin: 10px 100% 10px 350px;
+	min-height: 500px;
+	_height: 500px
+}
 
-  div#forum {
-	
-	border:2px solid blue;
-	width:500px;
-	margin:10px 0 10px 235px;
-	min-height:500px;
-	_height:500px
-  }
+div#content {
 
-  div#content{
-
-margin: 0 0 0 0;
-padding: 0 0 0 0 ;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
 
 
 
-  }
+}
 
-  div#footer {
-	border:2px solid red;
-	width:100%;
-	height:30px;
-  }
+div#footer {
+
+
+
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 100;
+
+
+	border: 2px solid red;
+	width: 100%;
+	height: 80px;
+}
