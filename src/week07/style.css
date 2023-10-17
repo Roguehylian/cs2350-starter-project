@@ -1,0 +1,57 @@
+div#page {
+	border:1px solid purple;
+	width:100%;
+	margin:0 auto;
+	padding:5px;
+	text-align:left;
+  }
+  body{
+
+
+
+  }
+  
+  div {
+	text-align:center;
+  }
+  
+
+  div#header {
+	border:2px solid red;
+	width:100%;
+	height:30px;
+	
+  }	
+
+
+  div#menu {
+	border:2px solid green;
+	width:200px;
+	float:left;
+	margin:10px 0 10px 5px;
+	height:350px;
+  }
+
+  div#forum {
+	
+	border:2px solid blue;
+	width:500px;
+	margin:10px 0 10px 235px;
+	min-height:500px;
+	_height:500px
+  }
+
+  div#content{
+
+margin: 0 0 0 0;
+padding: 0 0 0 0 ;
+
+
+
+  }
+
+  div#footer {
+	border:2px solid red;
+	width:100%;
+	height:30px;
+  }
