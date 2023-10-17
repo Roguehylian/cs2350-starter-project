@@ -9,13 +9,19 @@
 	<title>assignment06</title>
 
 
+	<style>
+
+
+
+	</style>
+
 </head>
 
 <body>
 
 	<div id="header">
 		<ul id="headerlist">
-			<li class="tableft">Matthew Mendoza</li>
+			<li class="tableft"><b>Matthew Mendoza</b></li>
 			<li class="tableft"><a href="https://youtu.be/dQw4w9WgXcQ?si=vUnulYLBh8fMIedF">Home</a></li>
 			<li class="tableft"><a href="https://youtu.be/dQw4w9WgXcQ?si=vUnulYLBh8fMIedF">Products</a></li>
 			<li class="tableft"><a href="https://youtu.be/dQw4w9WgXcQ?si=vUnulYLBh8fMIedF">Services</a></li>
@@ -30,15 +36,18 @@
 
 		<!-- <div class="content"> -->
 		<div id="menu">
+			<br>
 			<h1 class="listheader">Main Menu</h1>
 			<ul>
-				<li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1">Home</a></li>
+				
+					<li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1">Home</a></li>
 
-				<li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1">Products</a></li>
+					<li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1">Products</a></li>
 
-				<li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1">Services</a></li>
+					<li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1">Services</a></li>
 
-				<li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1">About us</a></li>
+					<li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1">About us</a></li>
+				
 			</ul>
 			<br>
 
@@ -65,43 +74,50 @@
 			</ul>
 		</div>
 		<div id="form">
+			<br>
 			<h1>Contact us form</h1>
 
 			<div class="formcontent">
 
 				<h3>Your name</h3>
-				<textarea class="textbox" type="text" placeholder="Type name here"></textarea>
+				<textarea class="textbox" placeholder="Type name here"></textarea>
 
 				<h3>Your address</h3>
-				<textarea class="textbox" type="text" placeholder="Type address here"></textarea>
+				<textarea class="textboxaddress" placeholder="Type address here"></textarea>
+				<p style="color: rgb(0, 255, 0);">This username is available</p>
 				<h3>Are you a member?</h3>
-				<radio>
-					<input type="radio" id="Yes" name="memberstatus" value="Yes">
-					<label for="html">Yes</label><br>
-					<input type="radio" id="No" name="memberstatus" value="No">
-					<label for="css">No</label><br>
-				</radio>
+
+
+
+				<input type="radio" id="Yes" name="memberstatus" value="Yes">
+				<label for="Yes">Yes</label><br>
+				<input type="radio" id="No" name="memberstatus" value="No">
+				<label for="No">No</label><br>
+
 
 
 				<h3>Email</h3>
-				<textarea class="textbox" type="text" placeholder="Email input"></textarea>
+				<textarea class="textboxemail" placeholder="Email input"></textarea>
+				<p style="color: red;">This email is invalid</p>
 
 				<h3>Message</h3>
-				<textarea style="width: 500px;height: 100px;" class="textbox" type="text"
+				<textarea style="width: 500px;height: 100px;" class="textbox"
 					placeholder="Type message here"></textarea>
 
 
 				<br><br>
 
-				<input type="checkbox" id="t&c" name="termscheck" value="check">
-				<label for="check">I agree to the <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color: blue;">Terms and conditions</a></label>
-				
-				
-				<br>
+				<input type="checkbox" id="Check" name="termscheck" value="check">
+				<label for="Check">I agree to the <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+						style="color: blue;">Terms and conditions</a></label>
+
 
 				<br>
 
-				<button style="buttongrey;">Helloooo</button>
+				<br>
+
+				<button class="submit">Submit</button>
+				<button class="cancel">Cancel</button>
 
 			</div>
 
@@ -112,7 +128,7 @@
 
 	</div>
 
-	<div id="footer">&copy; 2021- CS 2350All rights reserved</div>
+	<div id="footer">&copy; 2021 - CS 2350 - All rights reserved</div>
 
 
 </body>
