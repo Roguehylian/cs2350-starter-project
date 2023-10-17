@@ -36,7 +36,7 @@ div#notheader {
 
 
 
-h1#listheader{
+.listheader{
 
 
 font-size: 20px;
@@ -49,7 +49,7 @@ margin-left: 10px;
 
 
 div#forum > h1{
-	width: 90%;
+	width: 95%;
 	margin: 20px 0 0 20px;
 
 border-bottom: solid blue;
@@ -60,7 +60,11 @@ border-bottom: solid blue;
 
 
 div#header {
-	border-bottom: solid grey;
+background-color: white;
+	display: flex;
+	align-items: center;
+
+	border-bottom: solid 1px grey;
 	width: 100%;
 	height: 80px;
 
@@ -97,11 +101,49 @@ div#content {
 
 
 ul#headerlist{
-
+width: 100%;
 text-align: center;
+float: inline-start;
 
 
 }
+
+
+.tableft{
+
+	
+	display: inline;
+
+	float: left;
+	
+
+	margin: 0px 10px 5px 0px;
+	padding-left: 20px;
+
+}
+
+
+.tableft > a, .tabright > a{
+
+	text-decoration: none;
+
+
+
+
+}
+
+.tabright{
+	display: inline;
+
+	float: right;
+	
+
+	margin: 0px 100px 5px 0px;
+	
+}
+
+
+
 
 
 div#footer {
